@@ -226,12 +226,20 @@ function App() {
                   Spotify Playlist Genre Filter. Integrated Spotify Web API with OAuth 2.0. Achieved 80%
                   reduction in failed API calls and automated playlist generation logic (45m to &lt;2m).
                 </p>
-                <a className="inline-flex items-center gap-4 text-primary font-headline font-bold group"
-                  href="https://spopifyy.vercel.app/" target="_blank" rel="noreferrer">
-                  LIVE ARTIFACT
-                  <span
-                    className="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
-                </a>
+                <div className="flex gap-8">
+                  <a className="inline-flex items-center gap-4 text-primary font-headline font-bold group"
+                    href="https://spopifyy.vercel.app/" target="_blank" rel="noreferrer">
+                    LIVE ARTIFACT
+                    <span
+                      className="material-symbols-outlined group-hover:translate-x-2 transition-transform text-sm">open_in_new</span>
+                  </a>
+                  <a className="inline-flex items-center gap-4 text-neutral-400 hover:text-white font-headline font-bold group transition-colors"
+                    href="https://github.com/AbdulRahmanShihabuddin/spopifyy" target="_blank" rel="noreferrer">
+                    GITHUB ARTIFACT
+                    <span
+                      className="material-symbols-outlined group-hover:translate-x-2 transition-transform text-sm">arrow_forward</span>
+                  </a>
+                </div>
               </div>
             </div>
             {/* SaaS Dashboard */}
@@ -259,12 +267,20 @@ function App() {
                   Business Intelligence Platform. Engineered SQL aggregation for 10,000+ transaction records.
                   Achieved 400ms load times with SSR and implemented RBAC with HTTP-only cookies.
                 </p>
-                <a className="inline-flex items-center gap-4 text-primary font-headline font-bold group flex-row-reverse"
-                  href="https://saas-analytics.vercel.app/" target="_blank" rel="noreferrer">
-                  LIVE ARTIFACT
-                  <span
-                    className="material-symbols-outlined group-hover:-translate-x-2 transition-transform">arrow_back</span>
-                </a>
+                <div className="flex gap-8 justify-end">
+                  <a className="inline-flex items-center gap-4 text-neutral-400 hover:text-white font-headline font-bold group transition-colors flex-row-reverse"
+                    href="https://github.com/AbdulRahmanShihabuddin/saas-analytics" target="_blank" rel="noreferrer">
+                    GITHUB ARTIFACT
+                    <span
+                      className="material-symbols-outlined group-hover:-translate-x-2 transition-transform text-sm">arrow_back</span>
+                  </a>
+                  <a className="inline-flex items-center gap-4 text-primary font-headline font-bold group flex-row-reverse"
+                    href="https://saas-analytics.vercel.app/" target="_blank" rel="noreferrer">
+                    LIVE ARTIFACT
+                    <span
+                      className="material-symbols-outlined group-hover:-translate-x-2 transition-transform text-sm">open_in_new</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
