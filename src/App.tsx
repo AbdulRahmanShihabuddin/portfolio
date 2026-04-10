@@ -1,6 +1,5 @@
 import './App.css'
 import PillNav from './components/PillNav'
-import logo from '/vite.svg'
 
 function App() {
   const navItems = [
@@ -17,8 +16,6 @@ function App() {
       <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full pointer-events-none">
         <div className="pointer-events-auto">
           <PillNav
-            logo={logo}
-            logoAlt="AR Dev Logo"
             items={navItems}
             activeHref="#home"
             className="mt-6"
