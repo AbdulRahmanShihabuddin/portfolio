@@ -1,31 +1,36 @@
 import './App.css'
+import PillNav from './components/PillNav'
+import logo from '/vite.svg'
 
 function App() {
+  const navItems = [
+    { label: 'Home', href: '#home' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact', href: '#contact' }
+  ];
+
   return (
     <div className="selection:bg-primary selection:text-on-primary">
       {/* TopNavBar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full">
-        <div
-          className="rounded-full mt-6 mx-auto w-fit px-8 py-3 border border-white/10 bg-neutral-900/60 backdrop-blur-xl shadow-[0_20px_50px_rgba(184,159,255,0.08)] flex items-center gap-8">
-          <span className="text-xl font-black tracking-tighter text-white">AR_Dev</span>
-          <div className="hidden md:flex gap-6 items-center">
-            <a className="font-['Manrope'] tracking-widest uppercase text-xs font-bold text-[#b89fff] border-b-2 border-[#b89fff] pb-1 transition-transform duration-300 hover:scale-105 active:scale-95"
-              href="#home">Home</a>
-            <a className="font-['Manrope'] tracking-widest uppercase text-xs font-bold text-neutral-400 hover:text-white transition-colors transition-transform duration-300 hover:scale-105 active:scale-95"
-              href="#skills">Skills</a>
-            <a className="font-['Manrope'] tracking-widest uppercase text-xs font-bold text-neutral-400 hover:text-white transition-colors transition-transform duration-300 hover:scale-105 active:scale-95"
-              href="#experience">Experience</a>
-            <a className="font-['Manrope'] tracking-widest uppercase text-xs font-bold text-neutral-400 hover:text-white transition-colors transition-transform duration-300 hover:scale-105 active:scale-95"
-              href="#projects">Projects</a>
-            <a className="font-['Manrope'] tracking-widest uppercase text-xs font-bold text-neutral-400 hover:text-white transition-colors transition-transform duration-300 hover:scale-105 active:scale-95"
-              href="#contact">Contact</a>
-          </div>
-          <button
-            className="bg-gradient-to-r from-primary to-tertiary-container text-on-primary-fixed px-5 py-1.5 rounded-full text-xs font-bold font-headline transition-transform duration-300 hover:scale-105 active:scale-95">
-            Resume
-          </button>
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full pointer-events-none">
+        <div className="pointer-events-auto">
+          <PillNav
+            logo={logo}
+            logoAlt="AR Dev Logo"
+            items={navItems}
+            activeHref="#home"
+            className="mt-6"
+            ease="power3.easeOut"
+            baseColor="#b89fff"
+            pillColor="#1a1919"
+            hoveredPillTextColor="#000000"
+            pillTextColor="#ffffff"
+            initialLoadAnimation={true}
+          />
         </div>
-      </nav>
+      </div>
       <main>
         {/* Hero Section */}
         <section className="min-h-screen pt-40 px-6 md:px-12 flex flex-col justify-center max-w-7xl mx-auto" id="home">
@@ -42,16 +47,7 @@ function App() {
                 Full-stack Software Engineering student with hands-on experience building production-grade
                 applications. Seeking Software Engineering Internship opportunities in product-driven teams.
               </p>
-              <div className="mt-10 flex gap-6">
-                <button
-                  className="px-8 py-4 rounded-md bg-gradient-to-br from-primary to-tertiary-container text-on-primary-fixed font-bold font-headline hover:scale-[1.02] transition-transform">
-                  Examine Artifacts
-                </button>
-                <button
-                  className="px-8 py-4 rounded-md border border-outline-variant/15 text-white font-bold font-headline hover:border-outline-variant/40 hover:shadow-[0_0_20px_rgba(184,159,255,0.1)] transition-all">
-                  Digital Address
-                </button>
-              </div>
+
             </div>
           </div>
           {/* Ambient Glow */}
@@ -176,7 +172,7 @@ function App() {
           <div className="mb-20">
             <h2 className="text-xs font-headline font-bold tracking-[0.3em] uppercase text-primary mb-4">Curated
               Exhibition</h2>
-            <h3 className="text-5xl font-headline font-extrabold text-white">Select Works.</h3>
+            <h3 className="text-5xl font-headline font-extrabold text-white">Projects.</h3>
           </div>
           <div className="grid grid-cols-1 gap-32">
             {/* Spopify */}
@@ -233,7 +229,7 @@ function App() {
               </div>
               <div className="col-span-12 md:col-span-5 md:order-1 md:pr-12 text-right">
                 <p className="text-primary-fixed text-xs font-bold mb-2">JAN 2026 – FEB 2026</p>
-                <h4 className="text-4xl font-headline font-extrabold text-white mb-6">Omni-Analytics</h4>
+                <h4 className="text-4xl font-headline font-extrabold text-white mb-6">SaaS-Analytics</h4>
                 <p className="text-on-surface-variant leading-loose mb-8">
                   Business Intelligence Platform. Engineered SQL aggregation for 10,000+ transaction records.
                   Achieved 400ms load times with SSR and implemented RBAC with HTTP-only cookies.
