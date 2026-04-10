@@ -228,9 +228,9 @@ function App() {
             {/* Spopify */}
             <div className="editorial-grid gap-12 items-center">
               <div className="col-span-12 md:col-span-7 relative group">
-                <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg border-2 border-transparent group-hover:border-[#b89fff] transition-all duration-500">
                   <img alt="Spopify Project"
-                    className="w-full h-auto aspect-video object-cover transition-transform duration-1000 group-hover:scale-105"
+                    className="w-full h-auto aspect-video object-cover transition-transform duration-1000"
                     src={`${import.meta.env.BASE_URL}spopify.png`} />
                 </div>
                 <div className="absolute top-6 left-6 flex gap-3">
@@ -270,9 +270,9 @@ function App() {
             {/* SaaS Dashboard */}
             <div className="editorial-grid gap-12 items-center">
               <div className="col-span-12 md:col-span-7 md:order-2 relative group">
-                <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg border-2 border-transparent group-hover:border-[#b89fff] transition-all duration-500">
                   <img alt="SaaS Dashboard"
-                    className="w-full h-auto aspect-video object-cover transition-transform duration-1000 group-hover:scale-105"
+                    className="w-full h-auto aspect-video object-cover transition-transform duration-1000"
                     src={`${import.meta.env.BASE_URL}saas.png`} />
                 </div>
                 <div className="absolute top-6 right-6 flex gap-3">
