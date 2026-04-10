@@ -231,7 +231,7 @@ function App() {
                 <div className="overflow-hidden rounded-lg">
                   <img alt="Spopify Project"
                     className="w-full h-auto aspect-video object-cover transition-transform duration-1000 group-hover:scale-105"
-                    src="/spopify.png" />
+                    src={`${import.meta.env.BASE_URL}spopify.png`} />
                 </div>
                 <div className="absolute top-6 left-6 flex gap-3">
                   <span
@@ -273,7 +273,7 @@ function App() {
                 <div className="overflow-hidden rounded-lg">
                   <img alt="SaaS Dashboard"
                     className="w-full h-auto aspect-video object-cover transition-transform duration-1000 group-hover:scale-105"
-                    src="/saas.png" />
+                    src={`${import.meta.env.BASE_URL}saas.png`} />
                 </div>
                 <div className="absolute top-6 right-6 flex gap-3">
                   <span
