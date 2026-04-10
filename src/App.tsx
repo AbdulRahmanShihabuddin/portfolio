@@ -206,7 +206,7 @@ function App() {
                 <div className="overflow-hidden rounded-lg">
                   <img alt="Spopify Project"
                     className="w-full h-auto aspect-video object-cover transition-transform duration-1000 group-hover:scale-105"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvuLG1Ftw-uz96U0xE_SCuTn4cksTiGIRAibYP-uEzJx59BlY7VlQ7MQFwXgvkWDYD9Gezq2iHcaKdd9ZT1L3lEG2mesakiWBHnTAJlsfOcdTStITfsGgqUoPPQY1GJTLYoKKcAnadZQYGlMzWjJ94i1SaZdRPPXS0CLagyovpXIy8Aw7vJec2JGaU-j6fob1QF_hW-JG778oDOI0MTh2yjk3LM3BuZRqhEve_mTc0MJM3VNpjLkKldDw0rPUMVnjB7gMiauMGNXbN" />
+                    src="/spopify.png" />
                 </div>
                 <div className="absolute top-6 left-6 flex gap-3">
                   <span
@@ -227,8 +227,8 @@ function App() {
                   reduction in failed API calls and automated playlist generation logic (45m to &lt;2m).
                 </p>
                 <a className="inline-flex items-center gap-4 text-primary font-headline font-bold group"
-                  href="https://github.com/AbdulRahmanShihabuddin/spopifyy" target="_blank" rel="noreferrer">
-                  GITHUB ARTIFACT
+                  href="https://spopifyy.vercel.app/" target="_blank" rel="noreferrer">
+                  LIVE ARTIFACT
                   <span
                     className="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
                 </a>
@@ -240,7 +240,7 @@ function App() {
                 <div className="overflow-hidden rounded-lg">
                   <img alt="SaaS Dashboard"
                     className="w-full h-auto aspect-video object-cover transition-transform duration-1000 group-hover:scale-105"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEKP-R8InSe2LBMUb3tyT8aKBeepfPzTnMJCVa-S9J2Wa4s15Afq5Uso6yZb8pVaBQTtTMtUU091zlOWof0X-bC85IlJgLWBaA6y_BNwfhgMurOGogP9TsjavS1j4GBDlHqN36lwMrMmNv5WoRHm0qCV0Glc1FZ1DBjijsg4kGsI3wtg6M9NigBx1eey2gm_DFq7V-naSni7Il4be21u-Nb-YvyE0CXMpYtr0mgmHIWDFciAFg16N53oNq8VunoJEIQUuWy2mgMpty" />
+                    src="/saas.png" />
                 </div>
                 <div className="absolute top-6 right-6 flex gap-3">
                   <span
@@ -260,8 +260,8 @@ function App() {
                   Achieved 400ms load times with SSR and implemented RBAC with HTTP-only cookies.
                 </p>
                 <a className="inline-flex items-center gap-4 text-primary font-headline font-bold group flex-row-reverse"
-                  href="https://github.com/AbdulRahmanShihabuddin/saas-analytics" target="_blank" rel="noreferrer">
-                  GITHUB ARTIFACT
+                  href="https://saas-analytics.vercel.app/" target="_blank" rel="noreferrer">
+                  LIVE ARTIFACT
                   <span
                     className="material-symbols-outlined group-hover:-translate-x-2 transition-transform">arrow_back</span>
                 </a>
