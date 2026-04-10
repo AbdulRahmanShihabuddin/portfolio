@@ -20,7 +20,7 @@ export interface PillNavProps {
   initialLoadAnimation?: boolean;
 }
 
-const PillNav: React.FC<PillNavProps> = ({
+const PillNav: React.FC<PillNavProps> = React.memo(({
   items,
   activeHref,
   className = '',
@@ -365,6 +365,6 @@ const PillNav: React.FC<PillNavProps> = ({
       </div>
     </div>
   );
-};
+});
 
 export default PillNav;

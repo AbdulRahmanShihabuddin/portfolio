@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import PillNav from './components/PillNav'
 
+const navItems = [
+  { label: 'Home', href: '#home' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' }
+];
+
 function App() {
   const [activeSection, setActiveSection] = useState('#home');
-
-  const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' }
-  ];
 
   useEffect(() => {
     const observerOptions = {
