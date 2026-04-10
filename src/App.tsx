@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import PillNav from './components/PillNav'
+import GradualBlur from './components/GradualBlur'
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -40,8 +41,32 @@ function App() {
 
   return (
     <div className="selection:bg-primary selection:text-on-primary">
+      {/* Global Gradual Blurs */}
+      <GradualBlur
+        target="page"
+        position="top"
+        height="8rem"
+        strength={2}
+        divCount={8}
+        curve="bezier"
+        exponential
+        opacity={1}
+        zIndex={40}
+      />
+      <GradualBlur
+        target="page"
+        position="bottom"
+        height="10rem"
+        strength={3}
+        divCount={10}
+        curve="bezier"
+        exponential
+        opacity={1}
+        zIndex={40}
+      />
+
       {/* TopNavBar */}
-      <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full pointer-events-none">
+      <div className="fixed top-0 left-0 right-0 z-[60] flex justify-center w-full pointer-events-none">
         <div className="pointer-events-auto">
           <PillNav
             items={navItems}
