@@ -1,7 +1,10 @@
+import { useState, useEffect } from 'react'
 import './App.css'
 import PillNav from './components/PillNav'
 
 function App() {
+  const [activeSection, setActiveSection] = useState('#home');
+
   const navItems = [
     { label: 'Home', href: '#home' },
     { label: 'Skills', href: '#skills' },
@@ -10,6 +13,31 @@ function App() {
     { label: 'Contact', href: '#contact' }
   ];
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Section is active when 50% visible
+    };
+
+    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+    navItems.forEach((item) => {
+      const element = document.getElementById(item.href.replace('#', ''));
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [navItems]);
+
   return (
     <div className="selection:bg-primary selection:text-on-primary">
       {/* TopNavBar */}
@@ -17,7 +45,7 @@ function App() {
         <div className="pointer-events-auto">
           <PillNav
             items={navItems}
-            activeHref="#home"
+            activeHref={activeSection}
             className="mt-6"
             ease="power3.easeOut"
             baseColor="#b89fff"
