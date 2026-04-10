@@ -66,7 +66,7 @@ function App() {
       />
 
       {/* TopNavBar */}
-      <div className="fixed top-0 left-0 right-0 z-[60] flex justify-center w-full pointer-events-none">
+      <div className="fixed top-0 left-0 right-0 z-[200] flex justify-center w-full pointer-events-none">
         <div className="pointer-events-auto">
           <PillNav
             items={navItems}
