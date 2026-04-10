@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --radius: 1rem;
+    scroll-behavior: smooth;
   }
 }
 
