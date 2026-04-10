@@ -112,45 +112,45 @@ function App() {
             <h3 className="text-5xl font-headline font-extrabold text-white">The Stack.</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-8 bg-surface-container rounded-lg hover:bg-surface-bright transition-colors duration-500">
+            <div className="p-8 bg-surface-container rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-bright transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-primary mb-4 uppercase tracking-widest">Languages
               </h4>
               <p className="text-on-surface-variant font-light">JavaScript (ES6+), TypeScript, Python, Java, C++</p>
             </div>
             <div
-              className="p-8 bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors duration-500">
+              className="p-8 bg-surface-container-low rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-container transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-secondary mb-4 uppercase tracking-widest">Frameworks
               </h4>
               <p className="text-on-surface-variant font-light">React.js, Node.js, Express.js, Vue.js, Nuxt 3</p>
             </div>
-            <div className="p-8 bg-surface-container rounded-lg hover:bg-surface-bright transition-colors duration-500">
+            <div className="p-8 bg-surface-container rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-bright transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-primary mb-4 uppercase tracking-widest">Databases
               </h4>
               <p className="text-on-surface-variant font-light">MongoDB, PostgreSQL, MySQL</p>
             </div>
             <div
-              className="p-8 bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors duration-500">
+              className="p-8 bg-surface-container-low rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-container transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-secondary mb-4 uppercase tracking-widest">Frontend
               </h4>
               <p className="text-on-surface-variant font-light">HTML5, CSS3, TailwindCSS, Shadcn/UI</p>
             </div>
             <div
-              className="p-8 bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors duration-500">
+              className="p-8 bg-surface-container-low rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-container transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-secondary mb-4 uppercase tracking-widest">Backend
               </h4>
               <p className="text-on-surface-variant font-light">REST API Development, Auth Systems</p>
             </div>
-            <div className="p-8 bg-surface-container rounded-lg hover:bg-surface-bright transition-colors duration-500">
+            <div className="p-8 bg-surface-container rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-bright transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-primary mb-4 uppercase tracking-widest">Security
               </h4>
               <p className="text-on-surface-variant font-light">OAuth 2.0, JWT, RBAC, bcrypt, HTTP-only</p>
             </div>
             <div
-              className="p-8 bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors duration-500">
+              className="p-8 bg-surface-container-low rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-container transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-secondary mb-4 uppercase tracking-widest">Tools</h4>
               <p className="text-on-surface-variant font-light">Git, GitHub, Docker, Postman</p>
             </div>
-            <div className="p-8 bg-surface-container rounded-lg hover:bg-surface-bright transition-colors duration-500">
+            <div className="p-8 bg-surface-container rounded-lg border-2 border-transparent hover:border-[#b89fff] hover:bg-surface-bright transition-all duration-500">
               <h4 className="text-sm font-headline font-bold text-primary mb-4 uppercase tracking-widest">Deployment
               </h4>
               <p className="text-on-surface-variant font-light">Vercel, Render, Netlify</p>
