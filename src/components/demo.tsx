@@ -1,5 +1,4 @@
-import React from "react";
-import { FullScreenScrollFX, type FullScreenFXAPI } from "./ui/full-screen-scroll-fx";
+import { FullScreenScrollFX } from "./ui/full-screen-scroll-fx";
 
 const sections = [
     {
