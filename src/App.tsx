@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import PillNav from './components/PillNav'
 import GradualBlur from './components/GradualBlur'
+import saasImg from './assets/saas.png'
+import spopifyImg from './assets/spopify.png'
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -231,7 +233,7 @@ function App() {
                 <div className="overflow-hidden rounded-lg border-2 border-transparent group-hover:border-[#b89fff] transition-all duration-500">
                   <img alt="Spopify Project"
                     className="w-full h-auto aspect-video object-cover transition-transform duration-1000"
-                    src={`${import.meta.env.BASE_URL}spopify.png`} />
+                    src={spopifyImg} />
                 </div>
                 <div className="absolute top-6 left-6 flex gap-3">
                   <span
@@ -273,7 +275,7 @@ function App() {
                 <div className="overflow-hidden rounded-lg border-2 border-transparent group-hover:border-[#b89fff] transition-all duration-500">
                   <img alt="SaaS Dashboard"
                     className="w-full h-auto aspect-video object-cover transition-transform duration-1000"
-                    src={`${import.meta.env.BASE_URL}saas.png`} />
+                    src={saasImg} />
                 </div>
                 <div className="absolute top-6 right-6 flex gap-3">
                   <span
