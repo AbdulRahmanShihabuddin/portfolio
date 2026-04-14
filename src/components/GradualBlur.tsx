@@ -1,4 +1,4 @@
-import React, { CSSProperties, useEffect, useRef, useState, useMemo, PropsWithChildren } from 'react';
+import React, { type CSSProperties, useEffect, useRef, useState, useMemo, type PropsWithChildren } from 'react';
 
 type GradualBlurProps = PropsWithChildren<{
   position?: 'top' | 'bottom' | 'left' | 'right';
@@ -240,13 +240,13 @@ const GradualBlur: React.FC<GradualBlurProps> = props => {
     if (isVertical) {
       baseStyle.height = responsiveHeight;
       baseStyle.width = responsiveWidth || '100%';
-      baseStyle[config.position as any] = 0;
+      (baseStyle as any)[config.position] = 0;
       baseStyle.left = 0;
       baseStyle.right = 0;
     } else if (isHorizontal) {
       baseStyle.width = responsiveWidth || responsiveHeight;
       baseStyle.height = '100%';
-      baseStyle[config.position as any] = 0;
+      (baseStyle as any)[config.position] = 0;
       baseStyle.top = 0;
       baseStyle.bottom = 0;
     }
