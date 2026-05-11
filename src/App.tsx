@@ -392,21 +392,7 @@ function App() {
           </div>
         </section>
       </main>
-      {/* Footer */}
-      <footer
-        className="bg-[#0e0e0e] w-full py-20 px-10 mt-40 flex flex-col md:flex-row justify-between items-center border-t border-white/5">
-        <div className="font-['Inter'] text-sm tracking-wide text-neutral-500 mb-8 md:mb-0">
-          © 2024 ABDUL RAHMAN SHIHABUDDIN. Built in the Noir.
-        </div>
-        <div className="flex gap-12">
-          <a className="text-neutral-500 hover:text-[#b89fff] transition-colors duration-300 font-['Inter'] text-sm tracking-wide"
-            href="https://github.com/AbdulRahmanShihabuddin" target="_blank" rel="noreferrer">Github</a>
-          <a className="text-neutral-500 hover:text-[#b89fff] transition-colors duration-300 font-['Inter'] text-sm tracking-wide"
-            href="https://www.linkedin.com/in/abdul-rahman-shihabuddin-47474b31b/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a className="text-neutral-500 hover:text-[#b89fff] transition-colors duration-300 font-['Inter'] text-sm tracking-wide"
-            href="#twit" onClick={(e) => e.preventDefault()}>Twitter</a>
-        </div>
-      </footer>
+
     </div>
   )
 }
