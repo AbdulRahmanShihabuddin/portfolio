@@ -359,61 +359,35 @@ function App() {
         </section>
         {/* Contact Section */}
         <section className="py-40 px-6 md:px-12 max-w-7xl mx-auto" id="contact">
-          <div className="editorial-grid gap-12">
-            <div className="col-span-12 md:col-span-5">
-              <h2 className="text-xs font-headline font-bold tracking-[0.3em] uppercase text-primary mb-4">Acquisition
-              </h2>
-              <h3 className="text-5xl font-headline font-extrabold text-white leading-tight mb-8">Connect.</h3>
-              <p className="text-on-surface-variant text-lg mb-10 leading-relaxed">
-                Currently open for high-impact software engineering roles. Reach out to discuss how we can build
-                performant systems.
-              </p>
-              <div className="space-y-4">
-                <a className="flex items-center gap-4 text-white font-medium hover:text-primary transition-colors"
-                  href="mailto:abdul.rahman.iv7@gmail.com">
-                  <span className="material-symbols-outlined text-primary">mail</span>
-                  abdul.rahman.iv7@gmail.com
-                </a>
-                <p className="flex items-center gap-4 text-white font-medium">
-                  <span className="material-symbols-outlined text-primary">call</span>
-                  +91 7559999445
-                </p>
-                <p className="flex items-center gap-4 text-white font-medium">
-                  <span className="material-symbols-outlined text-primary">pin_drop</span>
-                  Remote / Global
-                </p>
-              </div>
-            </div>
-            <div className="col-span-12 md:col-span-6 md:col-start-7 bg-surface-container-low p-12 rounded-lg">
-              <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
-                <div className="group">
-                  <label
-                    className="block text-xs uppercase tracking-widest text-on-surface-variant mb-4 group-focus-within:text-secondary transition-colors">Identification</label>
-                  <input
-                    className="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/20 focus:ring-0 focus:border-secondary text-white pb-4 transition-all placeholder:text-neutral-700"
-                    placeholder="Your Name" type="text" />
-                </div>
-                <div className="group">
-                  <label
-                    className="block text-xs uppercase tracking-widest text-on-surface-variant mb-4 group-focus-within:text-secondary transition-colors">Digital
-                    Address</label>
-                  <input
-                    className="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/20 focus:ring-0 focus:border-secondary text-white pb-4 transition-all placeholder:text-neutral-700"
-                    placeholder="email@example.com" type="email" />
-                </div>
-                <div className="group">
-                  <label
-                    className="block text-xs uppercase tracking-widest text-on-surface-variant mb-4 group-focus-within:text-secondary transition-colors">Inquiry</label>
-                  <textarea
-                    className="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/20 focus:ring-0 focus:border-secondary text-white pb-4 transition-all placeholder:text-neutral-700 resize-none"
-                    placeholder="Tell me about your project vision..." rows={4}></textarea>
-                </div>
-                <button
-                  className="w-full py-5 rounded-md bg-gradient-to-r from-primary to-tertiary-container text-on-primary-fixed font-headline font-black text-lg tracking-widest hover:scale-[1.01] active:scale-95 transition-all"
-                  type="submit">
-                  SEND DISPATCH
-                </button>
-              </form>
+          <div className="max-w-3xl">
+            <h2 className="text-xs font-headline font-bold tracking-[0.3em] uppercase text-primary mb-4">Acquisition
+            </h2>
+            <h3 className="text-5xl font-headline font-extrabold text-white leading-tight mb-8">Connect.</h3>
+            <p className="text-on-surface-variant text-lg mb-10 leading-relaxed">
+              Currently open for high-impact software engineering roles. Reach out to discuss how we can build
+              performant systems.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <a className="flex items-center gap-4 text-white font-medium hover:text-primary transition-colors"
+                href="mailto:abdul.rahman.iv7@gmail.com">
+                <span className="material-symbols-outlined text-primary text-xl">mail</span>
+                abdul.rahman.iv7@gmail.com
+              </a>
+              <a className="flex items-center gap-4 text-white font-medium hover:text-primary transition-colors"
+                href="tel:+917559999445">
+                <span className="material-symbols-outlined text-primary text-xl">call</span>
+                +91 7559999445
+              </a>
+              <a className="flex items-center gap-4 text-white font-medium hover:text-primary transition-colors"
+                href="https://www.linkedin.com/in/abdul-rahman-shihabuddin-47474b31b/" target="_blank" rel="noreferrer">
+                <span className="material-symbols-outlined text-primary text-xl">link</span>
+                LinkedIn
+              </a>
+              <a className="flex items-center gap-4 text-white font-medium hover:text-primary transition-colors"
+                href="https://github.com/AbdulRahmanShihabuddin" target="_blank" rel="noreferrer">
+                <span className="material-symbols-outlined text-primary text-xl">code</span>
+                GitHub
+              </a>
             </div>
           </div>
         </section>
